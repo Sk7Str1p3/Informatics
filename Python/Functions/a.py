@@ -1,11 +1,9 @@
-a = int(input())
-b = int(input())
-c = int(input())
-d= int(input())
+def min(a1, b1):
+    c = a1
+    if b1 < c: c = b1
+    return c
 
-def min(a, b, c, d):
-    out = [a,b,c,d]
-    out.sort()
-    return out[0]
+a,b,c,d = list(map(int,input().split()))
 
-print(min(a,b,c,d))
+print(min(min(a,b), min(c,d)))
+
