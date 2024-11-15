@@ -2,9 +2,13 @@
 using namespace std;
 
 int main() {
-  int N, K;
+  int N, K, L;
+
   cin >> N;
   cin >> K;
-  cout << (K - (K % N)) / N << endl;
+
+  L = (K - (K % N)) / N;
+
+  cout << L;
   return 0;
 }

@@ -1,11 +1,14 @@
 #include <iostream>
-#include <ostream>
 using namespace std;
 
 int main() {
-  int v, t;
+  int v, t, s;
+
   cin >> v;
   cin >> t;
-  cout << ((v * t) % 109 + 109) % 109 << endl;
+
+  s = ((v * t) % 109 + 109) % 109;
+
+  cout << s << endl;
   return 0;
 }
