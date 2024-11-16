@@ -13,9 +13,9 @@ int main() {
   e = s + n * d;
   e += (n - 1) * b1;
   e += (n - 1) / 2 * (b2 - b1);
-
   eh = e / 60;
   em = e % 60;
+
   cout << eh << " " << em;
   return 0;
 }

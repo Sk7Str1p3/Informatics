@@ -2,8 +2,12 @@
 using namespace std;
 
 int main() {
-  int a;
+  int a,r;
+
   cin >> a;
-  cout << a / 10 - a / 100 * 10 << endl;
+
+  r = a / 10 - a / 100 * 10;
+
+  cout << r;
   return 0;
 }

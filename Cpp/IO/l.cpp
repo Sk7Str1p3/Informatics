@@ -4,7 +4,9 @@ using namespace std;
 
 int main() {
   int n, h, m, s;
+
   cin >> n;
+
   h = n / (60 * 60) % 24;
   m = n % (60 * 60) / 60;
   s = n % 60;
