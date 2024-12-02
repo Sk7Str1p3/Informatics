@@ -1,18 +1,14 @@
 def Election(x, y, z):
-    s = 0
+    x = int(x)
+    y = int(y)
+    z = int(z)
+    s = x + y + z
 
-    tc = sum([x is True, y is True, z is True])
-    fc = sum([x is False, y is False, z is False])
-    
-    if tc > fc:
-        s = 1
+    if s >= 2:
+        return 1
     else:
-        s = 0
+        return 0
 
-    return s
+x, y, z = input().split()
 
-x = int(input())
-y = int(input())
-z = int(input())
-
-print(Election(x,y,z))
+print(Election(x, y, z))

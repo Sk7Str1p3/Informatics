@@ -1,19 +1,18 @@
 def Prime(n):
-    l = 0
-    o = "foo"
+    if n <= 1:
+        return "composite"  # Числа <= 1 не являются простыми
+    if n <= 3:
+        return "prime"  # 2 и 3 - простые числа
+    if n % 2 == 0 or n % 3 == 0:
+        return "composite"  # Исключаем четные числа и кратные 3
 
-    if n == 1 or n == 0:
-        o = "Prime"
-    else:
-        for i in range(1,n):
-            if n % i == 0:
-                l += 1
-        if l == 1:
-            o = "Prime"
-        else:
-            o = "Composite"
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return "composite"
+        i += 6
 
-    return o
+    return "prime"
 
 n = int(input())
 
